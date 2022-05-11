@@ -34,13 +34,13 @@ header p {
     padding-bottom: 50px;
 }
 
-header a {
+header a, footer a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-header a:hover {
+header a:hover, footer a:hover {
     text-decoration:underline;
 }
 
@@ -49,19 +49,27 @@ header a:hover {
     background-color: white;
     height: min-content;
     width: auto;
-
     font-size: 3.5vw;
 }
 
 .fundo-branco p {
-    padding: 70px 0px 120px 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
     line-height: 2;
     margin: auto;
 }
 
 .fundo-imagem {
     height: max-content;
-    padding: 60px 0px 50px 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .fundo-imagem p{
@@ -76,18 +84,10 @@ header a:hover {
 
 #fundo1 {
     background-image: url('./imagens/background001.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 #fundo2 {
     background-image: url('./imagens/background002.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 footer {
@@ -96,14 +96,4 @@ footer {
     text-align: center;
     font-family: var(--fonte1);
     padding: 10px;
-}
-
-footer a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
